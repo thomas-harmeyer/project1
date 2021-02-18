@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 1</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- To add -->
+      <div class="row align-items-center">
+        <div class="col">
+          <div class="d-flex justify-content-center">
+            <a id="studentToAdd" class="btn btn-primary">Student</a>
+            <a id="facultyToAdd" class="btn btn-secondary">Faculty</a>
+            <a id="staffToAdd" class="btn btn-secondary">Staff</a>
+          </div>
+        </div>
+      </div>
+      <!-- Name and ID -->
+      <div class="row">
+        <div class="form-group col">
+          <label for="studentName">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="studentName"
+            placeholder="Student Name"
+          />
+        </div>
+        <div class="form-group col">
+          <label for="studentId">ID</label>
+          <input
+            type="number"
+            step="1"
+            class="form-control"
+            id="studentId"
+            placeholder="Student ID"
+          />
+        </div>
+      </div>
+      <!-- Add student -->
+      <div class="row student">
+        <div class="form-group col">
+          <label for="studentGpa">GPA</label>
+          <input
+            type="number"
+            step="0.01"
+            class="form-control"
+            id="studentGpa"
+            placeholder="Student GPA"
+          />
+        </div>
+        <div class="form-group col">
+          <label for="studentCreditHours">Credit Hours</label>
+          <input
+            type="number"
+            step="1"
+            class="form-control"
+            id="studentCreditHours"
+            placeholder="Student Credit Hours Taken"
+          />
+        </div>
+      </div>
+      <!-- Add faculty -->
+      <div class="row faculty">
+        <div class="col">
+          <div>
+            <div class="row">
+              <div class="form-group col">
+                <label for="facultyDepartment">Department</label>
+                <input
+                  type="number"
+                  step="0.01"
+                  class="form-control"
+                  id="facultyDepartment"
+                  placeholder="Faculty Department"
+                />
+              </div>
+              <div class="form-group col">
+                <label for="facultyRank">Rank</label>
+                <input
+                  type="number"
+                  step="1"
+                  class="form-control"
+                  id="facultyRank"
+                  placeholder="Faculty Rank"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Add staff -->
+      <div class="row staff">
+        <div class="form-group col">
+          <div>
+            <div class="row">
+              <div class="form-group col">
+                <label for="staffDepartment">Department</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="staffDepartment"
+                  placeholder="Staff Department "
+                />
+              </div>
+              <div class="form-group col">
+                <label for="staffStatus">Status</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="staffStatus"
+                  placeholder="Staff Status"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Submit button -->
+      <div class="row align-items-center">
+        <div class="col">
+          <div class="d-flex justify-content-center">
+            <a id="submit" class="btn btn-secondary">Add</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
